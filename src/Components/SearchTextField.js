@@ -4,15 +4,12 @@ import SearchIcon from '@mui/icons-material/Search';
 
 function SearchTextField(props) 
 {
-    const {id, label, variant, value, onChange} = props
+    const {className, ...rest} = props
     return ( 
-        <div style={{padding: '20px'}} data-testid='search-artist-text'>
+        <div data-testid='search-artist-text' className={className}>
             <TextField
-                id={id} 
-                label={label}
-                variant={variant}
-                value={value}
-                onChange={onChange}
+                {...rest}
+                fullWidth
                 InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">

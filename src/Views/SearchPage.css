@@ -1,0 +1,9 @@
+.search-bar{
+    padding: 40px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.search-bar div{
+    flex-grow: 1;
+}

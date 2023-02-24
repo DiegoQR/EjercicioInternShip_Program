@@ -2,17 +2,14 @@ import { Autocomplete, TextField } from '@mui/material';
 import React from 'react';
 
 function ComboBox(props) {
-    const { id, label, value, onChange, options, variant } = props
+    const { className, label, variant, ...rest } = props
 
     return ( 
-        <div style={{padding: '20px'}} data-testid='select-mediatype-combobox'>
+        <div data-testid='select-mediatype-combobox' className={className}>
             <Autocomplete
-                id={id}
+                {...rest}
                 disablePortal
                 disableClearable
-                options={options}
-                value={value}
-                onChange={onChange}
                 renderInput={(params) => <TextField {...params} label={label} variant={variant}/>}
             />
         </div>
