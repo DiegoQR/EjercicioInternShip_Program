@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react';
+import AlbumCard from '../Components/AlbumCard';
 import ComboBox from '../Components/ComboBox';
 import SearchTextField from '../Components/SearchTextField';
 import './SearchPage.css'
@@ -7,9 +8,9 @@ import './SearchPage.css'
 function SearchPage() {
     
     const [artist, setArtist] = useState('');
-    const [mediaType, setMediaType] = useState('All')
+    const [mediaType, setMediaType] = useState('all')
 
-    const options = ['All', 'tvShow', 'music', 'musicVideo'];
+    const options = ['movie', 'podcast', 'music', 'musicVideo', 'audiobook', 'shortFilm', 'tvShow', 'software', 'ebook', 'all'];
 
     function handleSearchClick(){
         console.log(artist);
@@ -23,6 +24,7 @@ function SearchPage() {
                 <ComboBox id='media-type-combobox' label='Tipo de media' value={mediaType} onChange={(event, newValue) => {setMediaType(newValue)}} options={options} variant='outlined'/>
                 <Button variant='outlined' onClick={handleSearchClick}>Buscar</Button>
             </div>
+            <AlbumCard name="Lost Heaven" artist="Vincent Footlose" price="14.99$"/>
         </div>
     );
 }
