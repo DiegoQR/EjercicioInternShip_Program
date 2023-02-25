@@ -20,3 +20,9 @@
 .search-results div{
     flex-grow: 1;
 }
+
+.search-results .no-search-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

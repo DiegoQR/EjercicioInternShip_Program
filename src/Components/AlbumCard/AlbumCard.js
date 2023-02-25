@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material'
 
-import albumDefault from '../Assets/image-album-default.png';
+import albumDefault from '../../Assets/image-album-default.png';
 import './AlbumCard.css';
 
 function AlbumCard(props) {
