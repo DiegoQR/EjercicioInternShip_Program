@@ -1,0 +1,28 @@
+.search-bar{
+    padding: 40px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.search-bar div{
+    flex-grow: 1;
+}
+
+.search-results{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: space-evenly;
+    align-items: stretch;
+    gap: 20px 40px;
+}
+
+.search-results div{
+    flex-grow: 1;
+}
+
+.search-results .no-search-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

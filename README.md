@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Ejercicio InterShip Program
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details>
+    <summary><strong>Comandos para inicializar el proyecto</strong></summary>
+    Estos comando debe de ser ejecutado dentro la carpeta ejercicio-truextend.
 
-## Available Scripts
+#### Comando para instalar Dependencias
+<strong>Importante instalar las dependencias antes de inicalizar el proyecto</strong>
 
-In the project directory, you can run:
+    npm install
 
-### `npm start`
+#### Comando para ejecutar los test
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    npm test
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Comando para Ejecutar el Proyecto
 
-### `npm test`
+    npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- _Comienza a escuchar en el puerto [localhost 3000](http://localhost:3000/)_
 
-### `npm run build`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+    <summary><strong>Tecnologia Usada</strong></summary>
+    La tecnologia que se uso para la creacion de este proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![Material Version](https://img.shields.io/badge/Material--ui-v5.-blue)](https://mui.com/material-ui/getting-started/installation/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Nos ofrece componentes para un desarrollo web más rápido y fácil. Construya su propio sistema de diseño o comience con el diseño de materiales.
 
-### `npm run eject`
+[![React Version](https://img.shields.io/badge/React-18.2.0-9cf)](https://es.reactjs.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![JavaScript Version](https://img.shields.io/badge/Javascript-ECMA%206-inactive)](https://www.w3schools.com/js/js_es6.asp)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ECMAScript 2015 fue la segunda revisión importante de JavaScript.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</details>
 
-## Learn More
+<details>
+    <summary><strong>Componentes creados</strong></summary>
+    Estos componentes se crearon para resolver el ejercicio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Album Card
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Componente tipo carta para mostrar la informacion de un album
 
-### Code Splitting
+#### Propiedades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    key: Identificador unico para identificar los distintos elementos que retorna la busqueda
+    image: URL de la imagen del album de 100x100 pixeles
+    name: nombre del album
+    artist: nombre del artista
+    price: precio en USD
 
-### Analyzing the Bundle Size
+## Combo box
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Usado para las comboboxes
 
-### Making a Progressive Web App
+#### Propiedades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    className: implementa una clase al componente
+    label: Etiqueta para la combobox
+    variant: variante de TextField para el combobox
+    ...rest: otra propiedades que se quiera a aplicar al autocomplete
 
-### Advanced Configuration
+## Search Text Field
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Textfield usado para entrada del campo de busqueda
 
-### Deployment
+#### Propiedades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    className: implementa una clase al componente
+    ...rest: otra propiedades que se quiera al TextField
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
